@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+build-essential
+libevent-2.1-7                           # (no description)
+libgc1                                   # conservative garbage collector for C and C++
+libgmp10                                 # Multiprecision arithmetic library
+libpcre2-8-0                             # New Perl Compatible Regular Expression Library- 8 bit runtime files
+libpcre2-dev                             # PCRE2 dev headers (pkg-config .pc file so Crystal detects PCRE2)
+libssl3t64                               # Secure Sockets Layer toolkit - shared libraries
+libxml2-16                               # GNOME XML library
+libyaml-0-2                              # Fast YAML 1.1 parser and emitter library
+pkg-config
+zlib1g                                   # compression library - runtime
+git                                      # fast, scalable, distributed revision control system

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+
+  set -e
+
+  # shellcheck source=/dev/null
+  . b19-i18n
+
+  # Check for shard.yml first (Crystal standard)
+  if [[ -f "shard.yml" ]]; then
+    b19-log good "SHARDS" "shard.yml is detected"
+    b19-run "SHARDS" "$(_ "Install dependencies")" --  \
+      shards install --production
+  else
+    b19-log warn "SHARDS" "shard.yml is not detected"
+  fi

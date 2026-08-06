@@ -1,0 +1,55 @@
+---
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+$schema: https://projectfile.org/schema/v1.json
+identity:
+  created: "2026-06-01"
+  name: crystal
+  summary: Crystal language runtime from upstream tarball in b19-style
+  title: B19/Crystal
+includes:
+  - .makefile/b19/ci.yaml
+  - .makefile/b19/images/ubuntu.yaml
+  - .makefile/b19/vulnerabilities/linux-libc-dev.yaml
+  - https://kiota.ch/b19/metadata/raw/branch/main/include.yaml
+  - https://kiota.ch/damian-buho/metadata/raw/branch/main/include.yaml
+kind: SoftwareSourceCode
+links:
+  - label: B19/Crystal on Codeberg
+    type: source-code
+    url: https://codeberg.org/b19/crystal
+  - label: B19/Crystal on GitHub
+    type: source-code
+    url: https://github.com/damian-buho/b19-crystal
+  - label: B19/Crystal on kiota.ch
+    type: source-code
+    url: https://kiota.ch/b19/crystal
+  - label: Issues on Codeberg
+    type: bugs
+    url: https://codeberg.org/b19/crystal/issues
+  - label: Issues on GitHub
+    type: bugs
+    url: https://github.com/damian-buho/b19-crystal/issues
+org:
+  b19:
+    scaffold:
+      compile-stage: compile-crystal
+      root-stage: base
+  projectfile:
+    conventions:
+      fragments:
+        parents:
+          - url: ssh://git@kiota.ch/b19/ubuntu.git
+    status: maintained
+repositories:
+  - issues: true
+    role: mirror
+    type: git
+    url: ssh://git@codeberg.org/b19/crystal.git
+  - role: mirror
+    type: git
+    url: git@github.com:damian-buho/b19-crystal.git
+  - role: origin
+    type: git
+    url: ssh://git@kiota.ch/b19/crystal.git
