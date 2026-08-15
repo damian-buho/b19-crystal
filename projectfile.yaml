@@ -6,8 +6,9 @@ $schema: https://projectfile.org/schema/v1.json
 identity:
   created: "2026-06-01"
   name: crystal
-  summary: Crystal language runtime from upstream tarball in b19-style
+  summary: Community-maintained distribution of Crystal based on B19/Ubuntu
   title: B19/Crystal
+  description: Community-maintained distribution of Crystal built on B19/Ubuntu. This repository holds only the packaging — Dockerfile, build scripts, and configuration, all MIT-licensed; the upstream Crystal is fetched at build time and retains its own licensing.
 includes:
   - .makefile/b19/ci.yaml
   - .makefile/b19/images/ubuntu.yaml
@@ -16,19 +17,47 @@ includes:
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/include.yaml
 kind: SoftwareSourceCode
 links:
-  - label: B19/Crystal on Codeberg
+  - label:
+      en: B19/Crystal on Codeberg
+      es: B19/Crystal en Codeberg
+      uk: B19/Crystal на Codeberg
+    tags:
+      - public
+      - badges
+      - badges-gitea
     type: source-code
     url: https://codeberg.org/b19/crystal
-  - label: B19/Crystal on GitHub
+  - label:
+      en: B19/Crystal on GitHub
+      es: B19/Crystal en GitHub
+      uk: B19/Crystal на GitHub
+    tags:
+      - public
+      - badges
+      - badges-github
     type: source-code
     url: https://github.com/damian-buho/b19-crystal
-  - label: B19/Crystal on kiota.ch
+  - label:
+      en: B19/Crystal on kiota.ch
+      es: B19/Crystal en kiota.ch
+      uk: B19/Crystal на kiota.ch
+    preferred: true
     type: source-code
     url: https://kiota.ch/b19/crystal
-  - label: Issues on Codeberg
+  - label:
+      en: Issues on Codeberg
+      es: Incidencias en Codeberg
+      uk: Issues на Codeberg
+    tags:
+      - support
     type: bugs
     url: https://codeberg.org/b19/crystal/issues
-  - label: Issues on GitHub
+  - label:
+      en: Issues on GitHub
+      es: Incidencias en GitHub
+      uk: Issues на GitHub
+    tags:
+      - support
     type: bugs
     url: https://github.com/damian-buho/b19-crystal/issues
 org:
@@ -53,3 +82,11 @@ repositories:
   - role: origin
     type: git
     url: ssh://git@kiota.ch/b19/crystal.git
+keywords:
+  - crystal
+  - language
+  - runtime
+  - compiler
+  - docker
+technologies:
+  - crystal
