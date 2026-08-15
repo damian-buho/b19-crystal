@@ -10,7 +10,7 @@ cff-version: 1.2.0
 message: Please cite this software using the metadata from this file.
 type: software
 title: B19/Crystal
-abstract: Crystal language runtime from upstream tarball in b19-style
+abstract: Community-maintained distribution of Crystal based on B19/Ubuntu
 authors:
   - family-names: Búho
     given-names: Damián
@@ -25,3 +25,9 @@ contact:
     website: https://dbuho.me
 license: MIT
 repository-code: https://kiota.ch/b19/crystal
+keywords:
+  - crystal
+  - language
+  - runtime
+  - compiler
+  - docker
