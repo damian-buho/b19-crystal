@@ -4,13 +4,13 @@ SPDX-License-Identifier: MIT
 pf-cli-managed: yes
 -->
 
-<!-- textlint-disable terminology -->
+<!-- textlint-disable terminology,common-misspellings -->
 
 [English](../../README.md) · [Українська](../uk/README.md)
 
 # B19/Crystal
 
-Crystal language runtime from upstream tarball in b19-style
+Distribución de Crystal mantenida por la comunidad, basada en B19/Ubuntu
 
 [![Stand with Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://damian-buho.github.io/support-ukraine/) [![License](https://img.shields.io/static/v1?label=license&message=MIT&color=4c1&style=flat-square)](LICENSE) ![Commit style](https://img.shields.io/static/v1?label=commits&message=conventional&color=blue&style=flat-square) ![Workflow](https://img.shields.io/static/v1?label=workflow&message=git-flow&color=blue&style=flat-square) ![Versioning](https://img.shields.io/static/v1?label=versioning&message=semantic&color=blue&style=flat-square) [![PRs welcome](https://img.shields.io/static/v1?label=PRs&message=welcome&color=4c1&style=flat-square)](CONTRIBUTING.md) [![Citation](https://img.shields.io/static/v1?label=citation&message=cff&color=blue&style=flat-square)](CITATION.cff) [![REUSE compliance](https://api.reuse.software/badge/codeberg.org/b19/crystal)](https://api.reuse.software/info/codeberg.org/b19/crystal)
 
@@ -20,7 +20,7 @@ Crystal language runtime from upstream tarball in b19-style
 
 ## Características
 
-- Shards install in production mode
+- Instalación de Shards en modo producción
 - Persistent APT cache across builds
 - Service process management with log routing (b19-exec)
 - Cached artifact downloads with integrity verification (b19-fetch)
@@ -49,7 +49,7 @@ Crystal language runtime from upstream tarball in b19-style
 - Pre-installed utility tools
 - XDG Base Directory paths
 
-Consulta [FEATURES.md](../../FEATURES.md) para ver la lista completa.
+Consulta [FEATURES.md](FEATURES.md) para ver la lista completa.
 
 ## Qué entrega este proyecto
 
@@ -110,12 +110,18 @@ Consulta la [ROADMAP.md](../../ROADMAP.md) para ver lo que viene.
 
 ## Enlaces
 
+### Proyecto
+
 - [Especificación de Projectfile](https://projectfile.org)
-- [B19/Crystal on Codeberg](https://codeberg.org/b19/crystal)
-- [B19/Crystal on GitHub](https://github.com/damian-buho/b19-crystal)
-- [B19/Crystal on kiota.ch](https://kiota.ch/b19/crystal)
-- [Issues on Codeberg](https://codeberg.org/b19/crystal/issues)
-- [Issues on GitHub](https://github.com/damian-buho/b19-crystal/issues)
+- [B19/Crystal en Codeberg](https://codeberg.org/b19/crystal)
+- [B19/Crystal en GitHub](https://github.com/damian-buho/b19-crystal)
+- [B19/Crystal en kiota.ch](https://kiota.ch/b19/crystal)
+- [Incidencias en Codeberg](https://codeberg.org/b19/crystal/issues)
+- [Incidencias en GitHub](https://github.com/damian-buho/b19-crystal/issues)
+
+### Otros
+
+- [Del autor](https://dbuho.me)
 
 ## Licencia
 
