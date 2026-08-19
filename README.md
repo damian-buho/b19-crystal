@@ -1,23 +1,27 @@
 <!--
 SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
 SPDX-License-Identifier: MIT
+pf-cli-managed: yes
 -->
 
-<!-- pf-cli-managed: yes -->
+[Español](docs/es/README.md) · [Українська](docs/uk/README.md)
+
 # B19/Crystal
 
-Crystal language runtime from upstream tarball in b19-style
+Community-maintained distribution of Crystal based on B19/Ubuntu
 
-[![License](https://img.shields.io/badge/license-MIT-4c1?style=flat-square)](LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-4c1?style=flat-square)](CONTRIBUTING.md) [![REUSE compliance](https://api.reuse.software/badge/codeberg.org/b19/crystal)](https://api.reuse.software/info/codeberg.org/b19/crystal)
+[![Stand with Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://damian-buho.github.io/support-ukraine/) [![License](https://img.shields.io/static/v1?label=license&message=MIT&color=4c1&style=flat-square)](LICENSE) ![Commit style](https://img.shields.io/static/v1?label=commits&message=conventional&color=blue&style=flat-square) ![Workflow](https://img.shields.io/static/v1?label=workflow&message=git-flow&color=blue&style=flat-square) ![Versioning](https://img.shields.io/static/v1?label=versioning&message=semantic&color=blue&style=flat-square) [![PRs welcome](https://img.shields.io/static/v1?label=PRs&message=welcome&color=4c1&style=flat-square)](CONTRIBUTING.md) [![Citation](https://img.shields.io/static/v1?label=citation&message=cff&color=blue&style=flat-square)](CITATION.cff) [![REUSE compliance](https://api.reuse.software/badge/codeberg.org/b19/crystal)](https://api.reuse.software/info/codeberg.org/b19/crystal)
 
-![Project status](https://img.shields.io/badge/status-maintained-1d63ed?style=flat-square) [![Last commit](https://img.shields.io/gitea/last-commit/b19/crystal?gitea_url=https://codeberg.org&style=flat-square)](https://codeberg.org/b19/crystal)
+![Project status](https://img.shields.io/static/v1?label=status&message=maintained&color=1d63ed&style=flat-square) [![Last commit](https://img.shields.io/gitea/last-commit/b19/crystal?gitea_url=https://codeberg.org&style=flat-square)](https://codeberg.org/b19/crystal)
 
 [![Build status on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/published.yaml/badge.svg)](https://kiota.ch/b19/crystal/actions)
 
 ## Features
 
 - Shards install in production mode
-- Crystal runtime from the upstream release tarball
+
+### Inherited from B19/Ubuntu 1.4.0
+
 - Persistent APT cache across builds
 - Service process management with log routing (b19-exec)
 - Cached artifact downloads with integrity verification (b19-fetch)
@@ -46,15 +50,34 @@ Crystal language runtime from upstream tarball in b19-style
 - Pre-installed utility tools
 - XDG Base Directory paths
 
-See [Features](FEATURES.md) for the full list.
+See [FEATURES.md](FEATURES.md) for the full list.
 
 ## What this provides
 
-- **Container image** `kiota.ch/b19/crystal:latest`
+- **Container image** `ghcr.io/damian-buho/b19/crystal:latest`
+- **Container image** `docker.io/damianbuho/b19-crystal:latest`
 
 ## Installation
 
 Pull the published container image:
+
+### Pull from GHCR
+
+```sh
+docker pull ghcr.io/damian-buho/b19/crystal:latest
+```
+
+### Pull from DockerHub
+
+```sh
+docker pull docker.io/damianbuho/b19-crystal:latest
+```
+
+Stable releases also publish `X.Y.Z`, `X.Y` and `X` tags — pull the precision you want to pin.
+
+If the registries above are unreachable, pull from the origin instead:
+
+### Pull from Kiota
 
 ```sh
 docker pull kiota.ch/b19/crystal:latest
@@ -64,20 +87,36 @@ docker pull kiota.ch/b19/crystal:latest
 
 Build on top of this image:
 
+### From GHCR
+
 ```dockerfile
-FROM kiota.ch/b19/crystal:latest
+FROM ghcr.io/damian-buho/b19/crystal:latest
 ```
+
+### From DockerHub
+
+```dockerfile
+FROM docker.io/damianbuho/b19-crystal:latest
+```
+
+For the recommended multi-stage pattern and the build-hook system (build.d), scaffold a derivative with `b19/scripts/scaffold.sh` from [m6e/b19](https://kiota.ch/m6e/b19).
 
 ## Building
 
-- [Makefile reference](docs/MAKEFILE.md)
+Run `make` with no arguments for the default target; run `make help` to list every target.
+
+For the local dev loop, `make dev-container` brings up the dev-container.
 
 Pipeline entry points:
 
 - `make analyze` — Run the heavy analysis sweep (mutation testing, benchmarks)
 - `make audited` — Re-scan the pinned dependencies and published artifacts for new vulnerabilities
 - `make check-outdated` — Report every pinned dependency that lags upstream
-- `make published` — Build, test, scan and publish the release artifacts
+- `make ready-to-publish` — Run the pseudo-CI pipeline locally — build, test and scan, without publishing
+
+## Roadmap
+
+See the [ROADMAP.md](ROADMAP.md) for what is planned next.
 
 ## Policies
 
@@ -85,16 +124,11 @@ Pipeline entry points:
 - [Security policy](SECURITY.md)
 - [Getting support](SUPPORT.md)
 - [Code of Conduct](CODE_OF_CONDUCT.md)
+- [AI and LLM Policy](AI_POLICY.md)
 
 ## Links
 
-### Project
-
-- [B19/Crystal on Codeberg](https://codeberg.org/b19/crystal)
-- [B19/Crystal on GitHub](https://github.com/damian-buho/b19-crystal)
-- [B19/Crystal on kiota.ch](https://kiota.ch/b19/crystal)
-- [Issues on Codeberg](https://codeberg.org/b19/crystal/issues)
-- [Issues on GitHub](https://github.com/damian-buho/b19-crystal/issues)
+- [Projectfile Specification](https://projectfile.org)
 
 ## License
 
