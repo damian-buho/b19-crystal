@@ -5,4 +5,4 @@
 # SPDX-License-Identifier: MIT
 
   set -e
-  crystal --version | grep -oP -m1 '\d+\.\d+\.\d+'
+  crystal --version | grep -oP -m1 '\d+(?:\.\d+)+'

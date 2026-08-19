@@ -12,7 +12,7 @@
   TESTDIR=$(mktemp -d)
 
   # crystal build
-  CRYSTAL_VERSION=$(crystal --version | head -n1 | grep -oP '\d+\.\d+\.\d+')
+  CRYSTAL_VERSION=$(crystal --version | head -n1 | grep -oP '\d+(?:\.\d+)+')
   echo 'puts "ok"' > "${TESTDIR}/hello.cr"
   crystal build "${TESTDIR}/hello.cr" -o "${TESTDIR}/hello"
   "${TESTDIR}/hello"
