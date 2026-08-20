@@ -15,7 +15,7 @@ SPDX-License-Identifier: MIT
 - Install roots are pinned by environment: `SHARDS_CACHE_PATH=${XDG_CACHE_HOME}/shards` (download cache) and `SHARDS_INSTALL_PATH=${B19_HOME}/lib` (installed libraries).
 - It runs as an inheritable `user/post` hook (`.i.sh`), so downstream images inherit dependency installation with no extra wiring; the shards cache mount uses BuildKit `sharing=locked`.
 
-## Inherited from B19/Ubuntu 1.4.0
+## Inherited from B19/Ubuntu 1.4.1
 
 ### Persistent APT cache across builds
 

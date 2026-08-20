@@ -17,7 +17,7 @@ SPDX-License-Identifier: MIT
 - Las raíces de instalación quedan fijadas por entorno: `SHARDS_CACHE_PATH=${XDG_CACHE_HOME}/shards` (caché de descargas) y `SHARDS_INSTALL_PATH=${B19_HOME}/lib` (bibliotecas instaladas).
 - Se ejecuta como un hook `user/post` heredable (`.i.sh`), de modo que las imágenes derivadas heredan la instalación de dependencias sin cableado extra; el montaje de la caché de shards usa `sharing=locked` de BuildKit.
 
-## Heredado de B19/Ubuntu 1.4.0
+## Heredado de B19/Ubuntu 1.4.1
 
 ### Caché APT persistente entre compilaciones
 
