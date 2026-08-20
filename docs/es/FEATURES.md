@@ -17,7 +17,7 @@ SPDX-License-Identifier: MIT
 - Las raíces de instalación quedan fijadas por entorno: `SHARDS_CACHE_PATH=${XDG_CACHE_HOME}/shards` (caché de descargas) y `SHARDS_INSTALL_PATH=${B19_HOME}/lib` (bibliotecas instaladas).
 - Se ejecuta como un hook `user/post` heredable (`.i.sh`), de modo que las imágenes derivadas heredan la instalación de dependencias sin cableado extra; el montaje de la caché de shards usa `sharing=locked` de BuildKit.
 
-## Heredado de B19/Ubuntu 1.4.1
+## Heredado de B19/Ubuntu
 
 ### Caché APT persistente entre compilaciones
 
@@ -84,7 +84,7 @@ SPDX-License-Identifier: MIT
 ### Conmutadores de funcionalidades para todos los subsistemas
 
 - Cada subsistema mayor (entrypoint, healthchecks, bootstrap, tests, secrets, validación de puertos, i18n, shell hooks) puede desactivarse en runtime mediante variables de entorno.
-- Los hooks individuales del entrypoint y del bootstrap pueden omitirse por nombre sin desactivar el subsistema entero.
+- Los hooks individuales del entrypoint, del bootstrap y de las comprobaciones de salud pueden omitirse por nombre sin desactivar el subsistema entero.
 - No hace falta reconstruir la imagen: los conmutadores son solo de runtime.
 
 ### Monitorización de estado integrada (healthcheck.d)

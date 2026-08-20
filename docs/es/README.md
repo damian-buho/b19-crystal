@@ -22,7 +22,7 @@ Distribución de Crystal mantenida por la comunidad, basada en B19/Ubuntu
 
 - Instalación de Shards en modo producción
 
-### Heredado de B19/Ubuntu 1.4.1
+### Heredado de B19/Ubuntu
 
 - Caché APT persistente entre compilaciones
 - Gestión de procesos de servicio con enrutado de logs (b19-exec)
