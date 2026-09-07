@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: MIT
 msgid ""
 msgstr ""
-"Project-Id-Version: crystal 1.0.0-4-g6d16fe7\n"
+"Project-Id-Version: crystal 1.1.5\n"
 "Report-Msgid-Bugs-To: https://codeberg.org/b19/crystal/issues\n"
-"POT-Creation-Date: 2026-08-07 22:09+0000\n"
+"POT-Creation-Date: 2026-09-07 03:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
