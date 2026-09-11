@@ -52,54 +52,13 @@ Community-maintained distribution of Crystal based on B19/Ubuntu
 
 See [FEATURES.md](FEATURES.md) for the full list.
 
-## What this provides
-
-- **Container image** `ghcr.io/damian-buho/b19/crystal:latest`
-- **Container image** `docker.io/damianbuho/b19-crystal:latest`
-
 ## Installation
 
-Pull the published container image:
-
-### Pull from GHCR
-
-```sh
-docker pull ghcr.io/damian-buho/b19/crystal:latest
-```
-
-### Pull from DockerHub
-
-```sh
-docker pull docker.io/damianbuho/b19-crystal:latest
-```
-
-Stable releases also publish `X.Y.Z`, `X.Y` and `X` tags — pull the precision you want to pin.
-
 If the registries above are unreachable, pull from the origin instead:
-
-### Pull from Kiota
 
 ```sh
 docker pull kiota.ch/b19/crystal:latest
 ```
-
-## Usage
-
-Build on top of this image:
-
-### From GHCR
-
-```dockerfile
-FROM ghcr.io/damian-buho/b19/crystal:latest
-```
-
-### From DockerHub
-
-```dockerfile
-FROM docker.io/damianbuho/b19-crystal:latest
-```
-
-For the recommended multi-stage pattern and the build-hook system (build.d), scaffold a derivative with `b19/scripts/scaffold.sh` from [m6e/b19](https://kiota.ch/m6e/b19).
 
 ## Building
 
