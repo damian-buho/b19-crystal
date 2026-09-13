@@ -9,7 +9,7 @@
 cff-version: 1.2.0
 message: Please cite this software using the metadata from this file.
 type: software
-title: B19/Crystal
+title: B19 / Crystal
 abstract: Community-maintained distribution of Crystal based on B19/Ubuntu
 authors:
   - family-names: Búho
@@ -31,3 +31,4 @@ keywords:
   - runtime
   - compiler
   - docker
+version: 1.1.5

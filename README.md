@@ -6,7 +6,7 @@ pf-cli-managed: yes
 
 [Español](docs/es/README.md) · [Українська](docs/uk/README.md)
 
-# B19/Crystal
+# B19 / Crystal
 
 Community-maintained distribution of Crystal based on B19/Ubuntu
 
