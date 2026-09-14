@@ -29,6 +29,14 @@ keywords:
   - compiler
   - docker
 kind: SoftwareSourceCode
+links:
+  - label:
+      en: B19 / Crystal on kiota.ch
+      es: B19 / Crystal en kiota.ch
+      uk: B19 / Crystal на kiota.ch
+    preferred: true
+    type: source-code
+    url: https://kiota.ch/b19/crystal
 org:
   b19:
     scaffold:
@@ -40,18 +48,10 @@ org:
         parents:
           - url: ssh://git@kiota.ch/b19/ubuntu.git
     status: maintained
-technologies:
-  - crystal
 repositories:
   - branch: main
     role: origin
     type: git
     url: ssh://git@kiota.ch/b19/crystal.git
-links:
-  - label:
-      en: B19 / Crystal on kiota.ch
-      es: B19 / Crystal en kiota.ch
-      uk: B19 / Crystal на kiota.ch
-    preferred: true
-    type: source-code
-    url: https://kiota.ch/b19/crystal
+technologies:
+  - crystal
