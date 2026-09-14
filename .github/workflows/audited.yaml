@@ -42,7 +42,7 @@ jobs:
           restore-keys: |
             ci-cache-grype-db-
       - name: grype-scan-registry
-        uses: projectfile-org/actions/run-tool@e7b4b9fa8c8f38a6f09252aeda97f30cc6d59f39 # v1
+        uses: projectfile-org/actions/run-tool@f59de038dbbb35b952cd5dda42d3c907f13d3113 # v1
         with:
           image: ${{ vars.D9T_GO_TOOLS_IMAGE || format('{0}/d9t/go-tools', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/damian-buho') }}
           version: ${{ env.M6E_TAG }}
@@ -64,7 +64,7 @@ jobs:
           restore-keys: |
             ci-cache-trivy-db-
       - name: trivy-scan-registry
-        uses: projectfile-org/actions/run-tool@e7b4b9fa8c8f38a6f09252aeda97f30cc6d59f39 # v1
+        uses: projectfile-org/actions/run-tool@f59de038dbbb35b952cd5dda42d3c907f13d3113 # v1
         with:
           image: ${{ vars.D9T_GO_TOOLS_IMAGE || format('{0}/d9t/go-tools', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/damian-buho') }}
           version: ${{ env.M6E_TAG }}
@@ -107,7 +107,7 @@ jobs:
           restore-keys: |
             ci-cache-grype-db-
       - name: grype-scan-source
-        uses: projectfile-org/actions/run-tool@e7b4b9fa8c8f38a6f09252aeda97f30cc6d59f39 # v1
+        uses: projectfile-org/actions/run-tool@f59de038dbbb35b952cd5dda42d3c907f13d3113 # v1
         with:
           image: ${{ vars.D9T_GO_TOOLS_IMAGE || format('{0}/d9t/go-tools', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/damian-buho') }}
           version: ${{ env.M6E_TAG }}
@@ -128,7 +128,7 @@ jobs:
           restore-keys: |
             ci-cache-trivy-db-
       - name: trivy-scan-source
-        uses: projectfile-org/actions/run-tool@e7b4b9fa8c8f38a6f09252aeda97f30cc6d59f39 # v1
+        uses: projectfile-org/actions/run-tool@f59de038dbbb35b952cd5dda42d3c907f13d3113 # v1
         with:
           image: ${{ vars.D9T_GO_TOOLS_IMAGE || format('{0}/d9t/go-tools', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/damian-buho') }}
           version: ${{ env.M6E_TAG }}
