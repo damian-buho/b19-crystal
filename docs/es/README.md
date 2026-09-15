@@ -60,6 +60,11 @@ Consulta [FEATURES.md](FEATURES.md) para ver la lista completa.
 
 - **Imagen de contenedor** `ghcr.io/damian-buho/b19/crystal:latest`
 
+## Plataformas admitidas
+
+- `linux/amd64`
+- `linux/arm64`
+
 ## Instalación
 
 Descarga la imagen de contenedor publicada:

@@ -60,6 +60,11 @@ pf-cli-managed: yes
 
 - **Образ контейнера** `ghcr.io/damian-buho/b19/crystal:latest`
 
+## Підтримувані платформи
+
+- `linux/amd64`
+- `linux/arm64`
+
 ## Встановлення
 
 Завантажте опублікований образ контейнера:

@@ -70,10 +70,15 @@ org:
       compile-stage: compile-crystal
       root-stage: base
   projectfile:
+    architecture:
+      - amd64
+      - arm64
     conventions:
       fragments:
         parents:
           - url: ssh://git@kiota.ch/b19/ubuntu.git
+    operating-system:
+      - linux
     status: maintained
 repositories:
   - role: mirror

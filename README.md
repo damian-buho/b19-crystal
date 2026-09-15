@@ -58,6 +58,11 @@ See [FEATURES.md](FEATURES.md) for the full list.
 
 - **Container image** `ghcr.io/damian-buho/b19/crystal:latest`
 
+## Supported platforms
+
+- `linux/amd64`
+- `linux/arm64`
+
 ## Installation
 
 Pull the published container image:
