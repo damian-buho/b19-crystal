@@ -23,9 +23,9 @@ includes:
   - .makefile/b19/traits/release.yaml
   - .makefile/b19/vulnerabilities/linux-libc-dev.yaml
   - https://kiota.ch/b19/metadata/raw/branch/main/include.yaml
-  - https://kiota.ch/damian-buho/metadata/raw/branch/main/registry/ghcr.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/forge/github.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/include.yaml
+  - https://kiota.ch/damian-buho/metadata/raw/branch/main/registry/ghcr.yaml
 keywords:
   - crystal
   - language
@@ -38,6 +38,7 @@ links:
       en: B19 / Crystal on GitHub
       es: B19 / Crystal en GitHub
       uk: B19 / Crystal на GitHub
+    priority: 80
     tags:
       - public
       - badges
@@ -48,6 +49,7 @@ links:
       en: Issues on GitHub
       es: Incidencias en GitHub
       uk: Задачі на GitHub
+    priority: 80
     tags:
       - support
     type: bugs
@@ -57,6 +59,7 @@ links:
       es: B19 / Crystal en kiota.ch
       uk: B19 / Crystal на kiota.ch
     preferred: true
+    priority: 10
     type: source-code
     url: https://kiota.ch/b19/crystal
   - label:
