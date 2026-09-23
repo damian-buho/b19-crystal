@@ -59,6 +59,7 @@ Consulta [FEATURES.md](FEATURES.md) para ver la lista completa.
 ## Qué entrega este proyecto
 
 - **Imagen de contenedor** `ghcr.io/damian-buho/b19/crystal:latest`
+- **Imagen de contenedor** `docker.io/damianbuho/b19-crystal:latest`
 
 ## Plataformas admitidas
 
@@ -73,6 +74,12 @@ Descarga la imagen de contenedor publicada:
 
 ```sh
 docker pull ghcr.io/damian-buho/b19/crystal:latest
+```
+
+### Descargar de DockerHub
+
+```sh
+docker pull docker.io/damianbuho/b19-crystal:latest
 ```
 
 Las versiones estables también publican las etiquetas `X.Y.Z`, `X.Y` y `X`: descarga el nivel de precisión que quieras fijar.
@@ -93,6 +100,12 @@ Construye sobre esta imagen:
 
 ```dockerfile
 FROM ghcr.io/damian-buho/b19/crystal:latest
+```
+
+### Desde DockerHub
+
+```dockerfile
+FROM docker.io/damianbuho/b19-crystal:latest
 ```
 
 Para el patrón multietapa recomendado y el sistema de hooks de compilación (build.d), genera un derivado con `b19/scripts/scaffold.sh` de [m6e/b19](https://kiota.ch/m6e/b19).

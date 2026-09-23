@@ -59,6 +59,7 @@ pf-cli-managed: yes
 ## Що надає цей проєкт
 
 - **Образ контейнера** `ghcr.io/damian-buho/b19/crystal:latest`
+- **Образ контейнера** `docker.io/damianbuho/b19-crystal:latest`
 
 ## Підтримувані платформи
 
@@ -73,6 +74,12 @@ pf-cli-managed: yes
 
 ```sh
 docker pull ghcr.io/damian-buho/b19/crystal:latest
+```
+
+### Завантажити з DockerHub
+
+```sh
+docker pull docker.io/damianbuho/b19-crystal:latest
 ```
 
 Стабільні випуски також публікують теґи `X.Y.Z`, `X.Y` і `X` — завантажте той рівень точності, який хочете зафіксувати.
@@ -93,6 +100,12 @@ docker pull kiota.ch/b19/crystal:latest
 
 ```dockerfile
 FROM ghcr.io/damian-buho/b19/crystal:latest
+```
+
+### З DockerHub
+
+```dockerfile
+FROM docker.io/damianbuho/b19-crystal:latest
 ```
 
 Для рекомендованого багатоетапного шаблону та системи хуків збірки (build.d) створіть похідний проєкт за допомогою `b19/scripts/scaffold.sh` з [m6e/b19](https://kiota.ch/m6e/b19).

@@ -25,6 +25,7 @@ includes:
   - https://kiota.ch/b19/metadata/raw/branch/main/include.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/forge/github.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/include.yaml
+  - https://kiota.ch/damian-buho/metadata/raw/branch/main/registry/dockerhub.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/registry/ghcr.yaml
 keywords:
   - crystal
@@ -68,6 +69,12 @@ links:
       uk: Пакунки на GHCR
     type: package-registry
     url: https://github.com/damian-buho/b19-crystal/pkgs/container/b19%2Fcrystal
+  - label:
+      en: Packages on Docker Hub
+      es: Paquetes en Docker Hub
+      uk: Пакунки на Docker Hub
+    type: package-registry
+    url: https://hub.docker.com/r/damianbuho/b19-crystal
 org:
   b19:
     scaffold:
