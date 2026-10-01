@@ -31,5 +31,5 @@ keywords:
   - runtime
   - compiler
   - docker
-version: 0.6.1
-date-released: "2026-09-15"
+version: 0.6.2
+date-released: "2026-10-01"
