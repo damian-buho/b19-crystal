@@ -22,8 +22,7 @@ ARG M6E_VERSION
 ARG TARGETARCH
 
 ENV B19_PREFIX="/usr/local"                         \
-    SHARDS_CACHE_PATH=${XDG_CACHE_HOME}/shards      \
-    SHARDS_INSTALL_PATH=${B19_HOME}/lib
+    SHARDS_CACHE_PATH=${XDG_CACHE_HOME}/shards
 
 
 WORKDIR ${B19_HOME}

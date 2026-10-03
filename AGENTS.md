@@ -21,7 +21,6 @@ Crystal language runtime from upstream tarball.
 ## ENV
 
 - `SHARDS_CACHE_PATH=${XDG_CACHE_HOME}/shards`
-- `SHARDS_INSTALL_PATH=${B19_HOME}/lib`
 
 ## Behavior
 
