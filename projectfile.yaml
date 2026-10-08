@@ -24,6 +24,7 @@ includes:
   - .makefile/b19/traits/signed-images.yaml
   - .makefile/b19/traits/torrent-image.yaml
   - .makefile/b19/vulnerabilities/linux-libc-dev.yaml
+  - .makefile/container/traits/malware.yaml
   - https://kiota.ch/b19/metadata/raw/branch/main/include.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/forge/github.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/include.yaml
