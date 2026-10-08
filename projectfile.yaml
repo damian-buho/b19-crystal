@@ -20,6 +20,7 @@ identity:
 includes:
   - .makefile/b19/ci.yaml
   - .makefile/b19/images/ubuntu.yaml
+  - .makefile/b19/traits/attested-images.yaml
   - .makefile/b19/traits/release.yaml
   - .makefile/b19/traits/signed-images.yaml
   - .makefile/b19/vulnerabilities/linux-libc-dev.yaml
