@@ -119,7 +119,7 @@ jobs:
           run: test.d
       - name: usage-check
         if: (vars.CI_ONLY_M6E_ARCH == '' || contains(format(',{0},', vars.CI_ONLY_M6E_ARCH), format(',{0},', matrix.M6E_ARCH))) && vars.CI_SKIP_CONTAINER_READY_TO_TEST != 'true' && vars.CI_SKIP_USAGE_CHECK != 'true'
-        run: .makefile/container/scripts/usage-capture.sh --check --default-lang= es uk
+        run: .makefile/container/scripts/usage-capture.sh --check --image --default-lang= es uk
       - name: dc-diagnose
         if: ${{ always() }}
         run: .makefile/container/scripts/compose-diagnose.sh
@@ -503,7 +503,8 @@ jobs:
       - run: echo images-are-ok
   inputs-are-ok:
     runs-on: docker
-    needs: ["documentation-is-ok", "projectfile-is-ok", "source-is-ok"]
+    needs: ["documentation-is-ok", "projectfile-is-ok", "signing-is-ready", "source-is-ok"]
+    if: ${{ !cancelled() && needs.documentation-is-ok.result == 'success' && needs.projectfile-is-ok.result == 'success' && (needs.signing-is-ready.result == 'success' || (needs.signing-is-ready.result == 'skipped' && !((startsWith(github.ref, 'refs/heads/')) || (startsWith(github.ref, 'refs/tags/'))))) && needs.source-is-ok.result == 'success' }}
     steps:
       - run: echo inputs-are-ok
   projectfile-is-ok:
@@ -544,6 +545,7 @@ jobs:
   published:
     runs-on: docker
     needs: ["image-has-sbom", "image-is-attested", "image-is-seeded", "image-is-signed", "publish-image", "ready-to-publish", "release-is-published", "release-notes-are-published"]
+    if: ${{ !cancelled() && (needs.image-has-sbom.result == 'success' || (needs.image-has-sbom.result == 'skipped' && !(startsWith(github.ref, 'refs/tags/')))) && (needs.image-is-attested.result == 'success' || (needs.image-is-attested.result == 'skipped' && !(startsWith(github.ref, 'refs/tags/')))) && (needs.image-is-seeded.result == 'success' || (needs.image-is-seeded.result == 'skipped' && !(startsWith(github.ref, 'refs/tags/')))) && (needs.image-is-signed.result == 'success' || (needs.image-is-signed.result == 'skipped' && !(startsWith(github.ref, 'refs/tags/')))) && (needs.publish-image.result == 'success' || (needs.publish-image.result == 'skipped' && !((startsWith(github.ref, 'refs/heads/')) || (startsWith(github.ref, 'refs/tags/'))))) && needs.ready-to-publish.result == 'success' && (needs.release-is-published.result == 'success' || (needs.release-is-published.result == 'skipped' && !(startsWith(github.ref, 'refs/tags/')))) && (needs.release-notes-are-published.result == 'success' || (needs.release-notes-are-published.result == 'skipped' && !(startsWith(github.ref, 'refs/tags/')))) }}
     steps:
       - run: echo published
   ready-to-publish:
