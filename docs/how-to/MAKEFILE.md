@@ -683,7 +683,7 @@ Pre-pull the base, tool and frontend images the projectfile names, so a later bu
 
 ### `usage-check`
 
-Verify the committed --help captures in docs/usage.d match the built image
+Verify the committed --help captures in docs/usage.d match the declared executable, else the built image
 
 ## License
 
@@ -1010,16 +1010,6 @@ Ensure the shared dev Docker network exists (no-op in the CI scenario)
 ### `remove-docker-network`
 
 Remove the Docker network
-
-## Observability
-
-### `gonzo`
-
-Analyze log streams in a terminal UI
-
-`gonzo`
-
-> Image: D9T_GO_TOOLS_IMAGE
 
 ## Projectfile
 
