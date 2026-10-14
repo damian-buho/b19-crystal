@@ -20,11 +20,11 @@ identity:
 includes:
   - .makefile/b19/ci.yaml
   - .makefile/b19/images/ubuntu.yaml
-  - .makefile/b19/traits/attested-images.yaml
-  - .makefile/b19/traits/signed-images.yaml
-  - .makefile/b19/traits/torrent-image.yaml
-  - .makefile/b19/vulnerabilities/linux-libc-dev.yaml
-  - .makefile/container/traits/malware.yaml
+  - .makefile/b19/traits/image/attested.yaml
+  - .makefile/b19/traits/image/signed.yaml
+  - .makefile/b19/traits/image/torrent.yaml
+  - .makefile/b19/vulnerabilities/deb/linux-libc-dev.yaml
+  - .makefile/container/traits/image/malware-scan.yaml
   - https://kiota.ch/b19/metadata/raw/branch/main/include.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/forge/github.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/include.yaml
