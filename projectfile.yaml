@@ -12,11 +12,12 @@ identity:
     uk: Дистрибуція Crystal з підтримкою спільноти на основі B19/Ubuntu
   title: B19 / Crystal
   description:
-    en: Community-maintained distribution of Crystal built on B19/Ubuntu. This repository holds only the packaging — Dockerfile, build scripts, and configuration, all MIT-licensed; the upstream Crystal is fetched at build time and retains its own licensing.
-    es: Distribución de Crystal mantenida por la comunidad, construida sobre B19/Ubuntu. Este repositorio contiene únicamente el empaquetado — Dockerfile, scripts de compilación y configuración, todo con licencia MIT; el código original de Crystal se obtiene en tiempo de compilación y conserva su propia licencia.
-    uk: Дистрибуція Crystal з підтримкою спільноти, зібрана на основі B19/Ubuntu. Цей репозиторій містить лише пакування — Dockerfile, скрипти збирання та конфігурацію, усе під ліцензією MIT; вихідний код Crystal отримують під час збирання, і він зберігає власну ліцензію.
+    en: Crystal from upstream tarballs with automatic shards install when a shard.yml is present.
+    es: Crystal desde tarballs oficiales con shards install automático cuando hay un shard.yml.
+    uk: Crystal з офіційних тарболів з автоматичним shards install за наявності shard.yml.
   version: 0.7.4
   released: "2026-10-15"
+  visibility: public
 includes:
   - .makefile/b19/ci.yaml
   - .makefile/b19/images/ubuntu.yaml
@@ -31,16 +32,15 @@ includes:
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/registry/dockerhub.yaml
 keywords:
   - crystal
-  - language
-  - runtime
+  - crystal-lang
   - compiler
-  - docker
+  - multiarch
 kind: SoftwareSourceCode
 links:
   - label:
-      en: B19 / Crystal on GitHub
-      es: B19 / Crystal en GitHub
-      uk: B19 / Crystal на GitHub
+      en: Repository on GitHub
+      es: Repositorio en GitHub
+      uk: Репозиторій на GitHub
     priority: 80
     tags:
       - public
@@ -58,9 +58,9 @@ links:
     type: bugs
     url: https://github.com/damian-buho/b19-crystal/issues
   - label:
-      en: B19 / Crystal on kiota.ch
-      es: B19 / Crystal en kiota.ch
-      uk: B19 / Crystal на kiota.ch
+      en: Repository on kiota.ch
+      es: Repositorio en kiota.ch
+      uk: Репозиторій на kiota.ch
     preferred: true
     priority: 10
     type: source-code
