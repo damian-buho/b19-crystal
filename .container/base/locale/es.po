@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: b19-crystal\n"
-"Report-Msgid-Bugs-To: i18n@b19.dev\n"
-"POT-Creation-Date: 2026-04-21 15:46-0300\n"
+"Report-Msgid-Bugs-To: https://github.com/damian-buho/b19-crystal/issues\n"
+"POT-Creation-Date: 2026-10-17 03:13+0000\n"
 "PO-Revision-Date: 2026-02-18 00:00+0000\n"
 "Last-Translator: b19 team\n"
 "Language-Team: Spanish\n"
@@ -16,10 +16,91 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .container/base/tools.d/install-shards-from-deps:11
+#: .container/base/tools.d/install-shards-from-deps:15
 msgid "Install dependencies"
 msgstr "Instalar dependencias"
 
-#: .container/base/build.d/base/post/300-install-crystal.sh:8
+#: .container/base/build.d/base/post/300-install-crystal.sh:12
 msgid "Extract %s"
 msgstr "Extraer %s"
+
+#: .container/base/build.d/base/post/310-link-libxml2.sh:21
+msgid "Skipping libxml2 link (B19_BUILD_DISABLE_LIBXML2_LINK set)"
+msgstr "Se omite el enlace de libxml2 (B19_BUILD_DISABLE_LIBXML2_LINK definido)"
+
+#: .container/base/build.d/base/post/310-link-libxml2.sh:36
+msgid "Link %s -> %s"
+msgstr "Enlazar %s -> %s"
+
+#: .container/base/build.d/base/post/310-link-libxml2.sh:39
+msgid "Already linked: %s"
+msgstr "Ya enlazado: %s"
+
+#: .container/user/command.d/auto-crystal-build:12
+msgid "unknown argument %s, the artifact record says what to build"
+msgstr "argumento desconocido %s, el registro de artefactos indica qué compilar"
+
+#: .container/user/command.d/auto-crystal-build:25
+msgid ""
+"the %s/%s cell needs its own runner, Crystal links only for the %s/%s host"
+msgstr "la celda %s/%s necesita su propio ejecutor, Crystal solo enlaza para el anfitrión %s/%s"
+
+#: .container/user/command.d/auto-crystal-build:39
+msgid "ignoring %s=%s, an unexpanded placeholder"
+msgstr "se ignora %s=%s, un marcador sin expandir"
+
+#: .container/user/command.d/auto-crystal-build:42
+msgid "version %s from %s"
+msgstr "versión %s de %s"
+
+#: .container/user/command.d/auto-crystal-build:47
+msgid "version %s, no ref, M6E_VERSION or git tag to read"
+msgstr "versión %s, no hay ref, M6E_VERSION ni etiqueta git que leer"
+
+#: .container/user/command.d/auto-crystal-build:61
+msgid "no kind: binary artifact in %s, nothing to build"
+msgstr "no hay ningún artefacto kind: binary en %s, nada que compilar"
+
+#: .container/user/command.d/auto-crystal-build:71
+msgid "shards install failed %s times, giving up"
+msgstr "shards install falló %s veces, se abandona"
+
+#: .container/user/command.d/auto-crystal-build:75
+msgid "shards install attempt %s failed, retrying in %s s"
+msgstr "el intento %s de shards install falló, se reintenta en %s s"
+
+#: .container/user/command.d/auto-crystal-build:87
+msgid "%s is not built for %s/%s, its record lists %s × %s"
+msgstr "%s no se compila para %s/%s, su registro indica %s × %s"
+
+#: .container/user/command.d/auto-crystal-build:98
+msgid "%s excludes the %s/%s cell"
+msgstr "%s excluye la celda %s/%s"
+
+#: .container/user/command.d/auto-crystal-build:108
+msgid "asset %s keeps a placeholder, only {command} {os} {arch} {ext} exist"
+msgstr "el recurso %s conserva un marcador, solo existen {command} {os} {arch} {ext}"
+
+#: .container/user/command.d/auto-crystal-build:114
+msgid "program file %s not found, declare it as the artifact package"
+msgstr "no se encontró el archivo de programa %s, declárelo como package del artefacto"
+
+#: .container/user/command.d/auto-crystal-build:124
+msgid "building %s %s for %s/%s from %s into %s, stamped through %s"
+msgstr "compilando %s %s para %s/%s desde %s en %s, versión inyectada mediante %s"
+
+#: .container/user/command.d/auto-crystal-build:130
+msgid "no binary artifact is built for %s/%s, the cell is outside the record"
+msgstr "no se compila ningún artefacto binario para %s/%s, la celda está fuera del registro"
+
+#: .container/user/command.d/auto-crystal-build:133
+msgid "built %s binaries for %s/%s"
+msgstr "compilados %s binarios para %s/%s"
+
+#: .container/user/test.d/1300-compile-test.sh:19
+msgid "crystal-%s compile test passed"
+msgstr "la prueba de compilación de crystal-%s pasó"
+
+#: .container/user/test.d/1300-compile-test.sh:23
+msgid "crystal-%s eval test passed"
+msgstr "la prueba eval de crystal-%s pasó"

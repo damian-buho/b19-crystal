@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: MIT
 msgid ""
 msgstr ""
-"Project-Id-Version: crystal 1.1.5\n"
-"Report-Msgid-Bugs-To: https://codeberg.org/b19/crystal/issues\n"
-"POT-Creation-Date: 2026-09-07 03:45+0000\n"
+"Project-Id-Version: crystal 0.7.4-5-gf6098d0\n"
+"Report-Msgid-Bugs-To: https://github.com/damian-buho/b19-crystal/issues\n"
+"POT-Creation-Date: 2026-10-17 03:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,67 @@ msgstr ""
 
 #: .container/base/build.d/base/post/310-link-libxml2.sh:39
 msgid "Already linked: %s"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:12
+msgid "unknown argument %s, the artifact record says what to build"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:25
+msgid ""
+"the %s/%s cell needs its own runner, Crystal links only for the %s/%s host"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:39
+msgid "ignoring %s=%s, an unexpanded placeholder"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:42
+msgid "version %s from %s"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:47
+msgid "version %s, no ref, M6E_VERSION or git tag to read"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:61
+msgid "no kind: binary artifact in %s, nothing to build"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:71
+msgid "shards install failed %s times, giving up"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:75
+msgid "shards install attempt %s failed, retrying in %s s"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:87
+msgid "%s is not built for %s/%s, its record lists %s × %s"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:98
+msgid "%s excludes the %s/%s cell"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:108
+msgid "asset %s keeps a placeholder, only {command} {os} {arch} {ext} exist"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:114
+msgid "program file %s not found, declare it as the artifact package"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:124
+msgid "building %s %s for %s/%s from %s into %s, stamped through %s"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:130
+msgid "no binary artifact is built for %s/%s, the cell is outside the record"
+msgstr ""
+
+#: .container/user/command.d/auto-crystal-build:133
+msgid "built %s binaries for %s/%s"
 msgstr ""
 
 #: .container/user/test.d/1300-compile-test.sh:19

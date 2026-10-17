@@ -3,6 +3,10 @@
 # SPDX-License-Identifier: MIT
 
 ARG B19_UBUNTU_BASE_IMAGE=registry.invalid/b19/ubuntu:resolute
+ARG PF_CLI_IMAGE=registry.invalid/projectfile/cli:latest
+
+# pf-cli reads the artifact record for auto-crystal-build
+FROM ${PF_CLI_IMAGE} AS pf-cli
 
 FROM ${B19_UBUNTU_BASE_IMAGE} AS b19-crystal
 
@@ -40,6 +44,7 @@ RUN --mount=type=bind,from=fetch,source=.,target=/fetch                         
 # hadolint ignore=DL3066 # B19_UID comes from the root
 USER ${B19_UID}
 
+COPY --from=pf-cli /usr/local/bin/pf-cli /usr/local/bin/pf-cli
 COPY --chown=${B19_UID}:${B19_GID} .container/user/ /
 
 ARG M6E_VERSION

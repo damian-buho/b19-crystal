@@ -26,6 +26,8 @@ Crystal language runtime from upstream tarball.
 
 `install-shards-from-deps` runs `shards install --production` if `shard.yml` is detected in the project.
 
+`auto-crystal-build` builds each `kind: binary` artifact for the host cell into `dirname(path)/<asset>`: program file from `package` (default `src/<command>.cr`), version through `version-env` (default `<COMMAND>_VERSION`; a project reading `{{ env("M6E_VERSION") }}` declares `version-env: M6E_VERSION`), `shards install` retried with backoff. A foreign `TARGET_OS`/`TARGET_ARCH` cell fails: Crystal links only for its host. `pf-cli` is COPY’d from `projectfile/cli`.
+
 ## Documentation
 
 - [Available make targets](@docs/MAKEFILE.md)

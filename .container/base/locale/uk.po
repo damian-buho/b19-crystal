@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: b19-crystal\n"
-"Report-Msgid-Bugs-To: i18n@b19.dev\n"
-"POT-Creation-Date: 2026-04-21 15:46-0300\n"
+"Report-Msgid-Bugs-To: https://github.com/damian-buho/b19-crystal/issues\n"
+"POT-Creation-Date: 2026-10-17 03:13+0000\n"
 "PO-Revision-Date: 2026-02-18 00:00+0000\n"
 "Last-Translator: b19 team\n"
 "Language-Team: Ukrainian\n"
@@ -17,10 +17,91 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
-#: .container/base/tools.d/install-shards-from-deps:11
+#: .container/base/tools.d/install-shards-from-deps:15
 msgid "Install dependencies"
 msgstr "Встановити залежності"
 
-#: .container/base/build.d/base/post/300-install-crystal.sh:8
+#: .container/base/build.d/base/post/300-install-crystal.sh:12
 msgid "Extract %s"
 msgstr "Розпакувати %s"
+
+#: .container/base/build.d/base/post/310-link-libxml2.sh:21
+msgid "Skipping libxml2 link (B19_BUILD_DISABLE_LIBXML2_LINK set)"
+msgstr "Пропуск посилання libxml2 (задано B19_BUILD_DISABLE_LIBXML2_LINK)"
+
+#: .container/base/build.d/base/post/310-link-libxml2.sh:36
+msgid "Link %s -> %s"
+msgstr "Посилання %s -> %s"
+
+#: .container/base/build.d/base/post/310-link-libxml2.sh:39
+msgid "Already linked: %s"
+msgstr "Уже пов’язано: %s"
+
+#: .container/user/command.d/auto-crystal-build:12
+msgid "unknown argument %s, the artifact record says what to build"
+msgstr "невідомий аргумент %s, що збирати, визначає запис артефактів"
+
+#: .container/user/command.d/auto-crystal-build:25
+msgid ""
+"the %s/%s cell needs its own runner, Crystal links only for the %s/%s host"
+msgstr "комірці %s/%s потрібен власний виконавець, Crystal компонує лише для хоста %s/%s"
+
+#: .container/user/command.d/auto-crystal-build:39
+msgid "ignoring %s=%s, an unexpanded placeholder"
+msgstr "ігнорується %s=%s, нерозгорнутий заповнювач"
+
+#: .container/user/command.d/auto-crystal-build:42
+msgid "version %s from %s"
+msgstr "версія %s з %s"
+
+#: .container/user/command.d/auto-crystal-build:47
+msgid "version %s, no ref, M6E_VERSION or git tag to read"
+msgstr "версія %s, немає ref, M6E_VERSION чи тегу git"
+
+#: .container/user/command.d/auto-crystal-build:61
+msgid "no kind: binary artifact in %s, nothing to build"
+msgstr "у %s немає артефакту kind: binary, нічого збирати"
+
+#: .container/user/command.d/auto-crystal-build:71
+msgid "shards install failed %s times, giving up"
+msgstr "shards install не вдався %s разів, припинено"
+
+#: .container/user/command.d/auto-crystal-build:75
+msgid "shards install attempt %s failed, retrying in %s s"
+msgstr "спроба %s shards install не вдалася, повтор через %s с"
+
+#: .container/user/command.d/auto-crystal-build:87
+msgid "%s is not built for %s/%s, its record lists %s × %s"
+msgstr "%s не збирається для %s/%s, його запис містить %s × %s"
+
+#: .container/user/command.d/auto-crystal-build:98
+msgid "%s excludes the %s/%s cell"
+msgstr "%s виключає комірку %s/%s"
+
+#: .container/user/command.d/auto-crystal-build:108
+msgid "asset %s keeps a placeholder, only {command} {os} {arch} {ext} exist"
+msgstr "ресурс %s містить заповнювач, існують лише {command} {os} {arch} {ext}"
+
+#: .container/user/command.d/auto-crystal-build:114
+msgid "program file %s not found, declare it as the artifact package"
+msgstr "файл програми %s не знайдено, задайте його як package артефакту"
+
+#: .container/user/command.d/auto-crystal-build:124
+msgid "building %s %s for %s/%s from %s into %s, stamped through %s"
+msgstr "збирання %s %s для %s/%s з %s у %s, версію передано через %s"
+
+#: .container/user/command.d/auto-crystal-build:130
+msgid "no binary artifact is built for %s/%s, the cell is outside the record"
+msgstr "для %s/%s не збирається жоден бінарний артефакт, комірка поза записом"
+
+#: .container/user/command.d/auto-crystal-build:133
+msgid "built %s binaries for %s/%s"
+msgstr "зібрано бінарних файлів: %s для %s/%s"
+
+#: .container/user/test.d/1300-compile-test.sh:19
+msgid "crystal-%s compile test passed"
+msgstr "тест компіляції crystal-%s пройдено"
+
+#: .container/user/test.d/1300-compile-test.sh:23
+msgid "crystal-%s eval test passed"
+msgstr "тест eval crystal-%s пройдено"
