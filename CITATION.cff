@@ -27,9 +27,8 @@ license: MIT
 repository-code: https://kiota.ch/b19/crystal
 keywords:
   - crystal
-  - language
-  - runtime
+  - crystal-lang
   - compiler
-  - docker
+  - multiarch
 version: 0.7.4
 date-released: "2026-10-15"
