@@ -15,7 +15,7 @@ identity:
     en: Crystal from upstream tarballs with automatic shards install when a shard.yml is present.
     es: Crystal desde tarballs oficiales con shards install automático cuando hay un shard.yml.
     uk: Crystal з офіційних тарболів з автоматичним shards install за наявності shard.yml.
-  version: 0.8.0
+  version: 0.8.1
   released: "2026-10-18"
   visibility: public
 includes:
