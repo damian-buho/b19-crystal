@@ -4,13 +4,13 @@
 build-essential
 libevent-2.1-7                           # (no description)
 libgc1                                   # conservative garbage collector for C and C++
-libgmp10                                 # Multiprecision arithmetic library
+libgmp-dev                               # GMP link files for Crystal `big`
 libpcre2-8-0                             # New Perl Compatible Regular Expression Library- 8 bit runtime files
 libpcre2-dev                             # PCRE2 dev headers (pkg-config .pc file so Crystal detects PCRE2)
 libssl3t64                               # Secure Sockets Layer toolkit - shared libraries
 libssl-dev                               # OpenSSL dev files (libcrypto.so link and pkg-config .pc for Crystal)
-libxml2-16                               # GNOME XML library
-libyaml-0-2                              # Fast YAML 1.1 parser and emitter library
+libxml2-dev                              # libxml2 link files for Crystal `xml`
+libyaml-dev                              # libyaml link files for Crystal `yaml`
 pkg-config
-zlib1g                                   # compression library - runtime
+zlib1g-dev                               # zlib link files for Crystal `compress`
 git                                      # fast, scalable, distributed revision control system
