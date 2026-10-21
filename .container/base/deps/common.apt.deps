@@ -9,6 +9,8 @@ libpcre2-8-0                             # New Perl Compatible Regular Expressio
 libpcre2-dev                             # PCRE2 dev headers (pkg-config .pc file so Crystal detects PCRE2)
 libssl3t64                               # Secure Sockets Layer toolkit - shared libraries
 libssl-dev                               # OpenSSL dev files (libcrypto.so link and pkg-config .pc for Crystal)
+libjitterentropy3-dev                    # static libcrypto.a entropy source, named in its Libs.private
+libzstd-dev                              # static libcrypto.a compression, named in its Libs.private
 libxml2-dev                              # libxml2 link files for Crystal `xml`
 libyaml-dev                              # libyaml link files for Crystal `yaml`
 pkg-config

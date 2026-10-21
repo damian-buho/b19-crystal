@@ -17,6 +17,7 @@ Crystal language runtime from upstream tarball.
 - No series axis (single image)
 - Arch: amd64, arm64
 - Pinned version: check `.container/base/deps/crystal/version.deps`
+- Link files (`-dev`) for every C library the stdlib binds on Linux, pinned by `test.d/1310-stdlib-link-test.sh`; a shard’s own C library is the project’s to add
 
 ## ENV
 
@@ -26,7 +27,7 @@ Crystal language runtime from upstream tarball.
 
 `install-shards-from-deps` runs `shards install --production` if `shard.yml` is detected in the project.
 
-`auto-crystal-build` builds each `kind: binary` artifact for the host cell into `dirname(path)/<asset>`: program file from `package` (default `src/<command>.cr`), version through `version-env` (default `<COMMAND>_VERSION`; a project reading `{{ env("M6E_VERSION") }}` declares `version-env: M6E_VERSION`), `shards install` retried with backoff. A foreign `TARGET_OS`/`TARGET_ARCH` cell fails: Crystal links only for its host. `pf-cli` is COPY’d from `projectfile/cli`.
+`auto-crystal-build` builds each `kind: binary` artifact for the host cell into `dirname(path)/<asset>`: program file from `package` (default `src/<command>.cr`), version through `version-env` (default `<COMMAND>_VERSION`; a project reading `{{ env("M6E_VERSION") }}` declares `version-env: M6E_VERSION`), `shards install` retried with backoff, linked `--static` unless the artifact declares `static: false` (the `pkg-config --static` closure of `libssl` and `libxml-2.0` goes in `--link-flags`). A foreign `TARGET_OS`/`TARGET_ARCH` cell fails: Crystal links only for its host. `pf-cli` is COPY’d from `projectfile/cli`.
 
 ## Documentation
 

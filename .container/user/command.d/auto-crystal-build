@@ -120,9 +120,14 @@ for index in "${indexes[@]}"; do
         version_env="${version_env//-/_}"
     fi
 
+    link=()
+    static="${field[${index}.static]:-true}"
+    # Static archives keep their own dependencies in Libs.private, which only pkg-config --static prints
+    [[ "${static}" == true ]] && link=(--static --link-flags "$(pkg-config --static --libs libssl libxml-2.0)")
+
     mkdir --parents "$(dirname "${out}")"
-    b19-log info "${TOOL}" "$(_p 'building %s %s for %s/%s from %s into %s, stamped through %s' "${command}" "${version}" "${os}" "${arch}" "${program}" "${out}" "${version_env}")"
-    env "${version_env}=${version}" crystal build "${program}" --release --no-debug --output "${out}" 1>&2
+    b19-log info "${TOOL}" "$(_p 'building %s %s for %s/%s from %s into %s, stamped through %s, static %s' "${command}" "${version}" "${os}" "${arch}" "${program}" "${out}" "${version_env}" "${static}")"
+    env "${version_env}=${version}" crystal build "${program}" --release --no-debug "${link[@]}" --output "${out}" 1>&2
     built=$(( built + 1 ))
 done
 

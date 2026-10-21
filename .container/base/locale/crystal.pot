@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: MIT
 msgid ""
 msgstr ""
-"Project-Id-Version: crystal 0.7.4-5-gf6098d0\n"
+"Project-Id-Version: crystal 0.8.3\n"
 "Report-Msgid-Bugs-To: https://github.com/damian-buho/b19-crystal/issues\n"
-"POT-Creation-Date: 2026-10-17 03:13+0000\n"
+"POT-Creation-Date: 2026-10-21 00:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,6 @@ msgstr ""
 
 #: .container/base/build.d/base/post/300-install-crystal.sh:12
 msgid "Extract %s"
-msgstr ""
-
-#: .container/base/build.d/base/post/310-link-libxml2.sh:21
-msgid "Skipping libxml2 link (B19_BUILD_DISABLE_LIBXML2_LINK set)"
-msgstr ""
-
-#: .container/base/build.d/base/post/310-link-libxml2.sh:36
-msgid "Link %s -> %s"
-msgstr ""
-
-#: .container/base/build.d/base/post/310-link-libxml2.sh:39
-msgid "Already linked: %s"
 msgstr ""
 
 #: .container/user/command.d/auto-crystal-build:12
@@ -84,15 +72,15 @@ msgstr ""
 msgid "program file %s not found, declare it as the artifact package"
 msgstr ""
 
-#: .container/user/command.d/auto-crystal-build:124
-msgid "building %s %s for %s/%s from %s into %s, stamped through %s"
+#: .container/user/command.d/auto-crystal-build:129
+msgid "building %s %s for %s/%s from %s into %s, stamped through %s, static %s"
 msgstr ""
 
-#: .container/user/command.d/auto-crystal-build:130
+#: .container/user/command.d/auto-crystal-build:135
 msgid "no binary artifact is built for %s/%s, the cell is outside the record"
 msgstr ""
 
-#: .container/user/command.d/auto-crystal-build:133
+#: .container/user/command.d/auto-crystal-build:138
 msgid "built %s binaries for %s/%s"
 msgstr ""
 
@@ -102,4 +90,16 @@ msgstr ""
 
 #: .container/user/test.d/1300-compile-test.sh:23
 msgid "crystal-%s eval test passed"
+msgstr ""
+
+#: .container/user/test.d/1310-stdlib-link-test.sh:43
+msgid "stdlib link test with static %s printed %s, expected ok"
+msgstr ""
+
+#: .container/user/test.d/1310-stdlib-link-test.sh:48
+msgid "stdlib link test with static %s built %s with %s ELF interpreters"
+msgstr ""
+
+#: .container/user/test.d/1310-stdlib-link-test.sh:51
+msgid "stdlib link test with static %s passed"
 msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: b19-crystal\n"
 "Report-Msgid-Bugs-To: https://github.com/damian-buho/b19-crystal/issues\n"
-"POT-Creation-Date: 2026-10-17 03:13+0000\n"
+"POT-Creation-Date: 2026-10-21 00:41+0000\n"
 "PO-Revision-Date: 2026-02-18 00:00+0000\n"
 "Last-Translator: b19 team\n"
 "Language-Team: Ukrainian\n"
@@ -25,18 +25,6 @@ msgstr "Встановити залежності"
 msgid "Extract %s"
 msgstr "Розпакувати %s"
 
-#: .container/base/build.d/base/post/310-link-libxml2.sh:21
-msgid "Skipping libxml2 link (B19_BUILD_DISABLE_LIBXML2_LINK set)"
-msgstr "Пропуск посилання libxml2 (задано B19_BUILD_DISABLE_LIBXML2_LINK)"
-
-#: .container/base/build.d/base/post/310-link-libxml2.sh:36
-msgid "Link %s -> %s"
-msgstr "Посилання %s -> %s"
-
-#: .container/base/build.d/base/post/310-link-libxml2.sh:39
-msgid "Already linked: %s"
-msgstr "Уже пов’язано: %s"
-
 #: .container/user/command.d/auto-crystal-build:12
 msgid "unknown argument %s, the artifact record says what to build"
 msgstr "невідомий аргумент %s, що збирати, визначає запис артефактів"
@@ -44,7 +32,9 @@ msgstr "невідомий аргумент %s, що збирати, визна�
 #: .container/user/command.d/auto-crystal-build:25
 msgid ""
 "the %s/%s cell needs its own runner, Crystal links only for the %s/%s host"
-msgstr "комірці %s/%s потрібен власний виконавець, Crystal компонує лише для хоста %s/%s"
+msgstr ""
+"комірці %s/%s потрібен власний виконавець, Crystal компонує лише для хоста "
+"%s/%s"
 
 #: .container/user/command.d/auto-crystal-build:39
 msgid "ignoring %s=%s, an unexpanded placeholder"
@@ -86,15 +76,15 @@ msgstr "ресурс %s містить заповнювач, існують ли
 msgid "program file %s not found, declare it as the artifact package"
 msgstr "файл програми %s не знайдено, задайте його як package артефакту"
 
-#: .container/user/command.d/auto-crystal-build:124
-msgid "building %s %s for %s/%s from %s into %s, stamped through %s"
-msgstr "збирання %s %s для %s/%s з %s у %s, версію передано через %s"
+#: .container/user/command.d/auto-crystal-build:129
+msgid "building %s %s for %s/%s from %s into %s, stamped through %s, static %s"
+msgstr "збирання %s %s для %s/%s з %s у %s, версію передано через %s, статично %s"
 
-#: .container/user/command.d/auto-crystal-build:130
+#: .container/user/command.d/auto-crystal-build:135
 msgid "no binary artifact is built for %s/%s, the cell is outside the record"
 msgstr "для %s/%s не збирається жоден бінарний артефакт, комірка поза записом"
 
-#: .container/user/command.d/auto-crystal-build:133
+#: .container/user/command.d/auto-crystal-build:138
 msgid "built %s binaries for %s/%s"
 msgstr "зібрано бінарних файлів: %s для %s/%s"
 
@@ -105,3 +95,15 @@ msgstr "тест компіляції crystal-%s пройдено"
 #: .container/user/test.d/1300-compile-test.sh:23
 msgid "crystal-%s eval test passed"
 msgstr "тест eval crystal-%s пройдено"
+
+#: .container/user/test.d/1310-stdlib-link-test.sh:43
+msgid "stdlib link test with static %s printed %s, expected ok"
+msgstr "тест компонування stdlib зі static %s вивів %s, очікувалося ok"
+
+#: .container/user/test.d/1310-stdlib-link-test.sh:48
+msgid "stdlib link test with static %s built %s with %s ELF interpreters"
+msgstr "тест компонування stdlib зі static %s зібрав %s з %s ELF-інтерпретаторами"
+
+#: .container/user/test.d/1310-stdlib-link-test.sh:51
+msgid "stdlib link test with static %s passed"
+msgstr "тест компонування stdlib зі static %s пройдено"
