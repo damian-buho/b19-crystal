@@ -28,7 +28,7 @@ fi
 uname_arch="$(uname -m)"
 
 version=""
-for source in GITHUB_REF_NAME M6E_VERSION git; do
+for source in M6E_RELEASE_TAG GITHUB_REF_NAME M6E_VERSION git; do
     if [[ "${source}" == git ]]; then
         candidate="$(git describe --tags --always --dirty 2>/dev/null)" || candidate=""
     else
