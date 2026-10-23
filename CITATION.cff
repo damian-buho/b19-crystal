@@ -30,5 +30,5 @@ keywords:
   - crystal-lang
   - compiler
   - multiarch
-version: 0.9.1
-date-released: "2026-10-21"
+version: 0.9.2
+date-released: "2026-10-22"
