@@ -36,8 +36,10 @@ EOF
   binary="${TESTDIR}/dist/stdlib-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)"
 
   for static in false true; do
-    printf 'identity:\n  name: stdlib\norg:\n  projectfile:\n    artifacts:\n      stdlib:\n        kind: binary\n        path: dist/stdlib\n        static: %s\n' "${static}" > "${TESTDIR}/projectfile.yaml"
-    (cd "${TESTDIR}" && auto-crystal-build)
+    link=()
+    [[ "${static}" == true ]] && link=(--static --link-flags "$(pkg-config --static --libs libssl libxml-2.0)")
+    mkdir --parents "${TESTDIR}/dist"
+    crystal build "${TESTDIR}/src/stdlib.cr" --release --no-debug "${link[@]}" --output "${binary}" 1>&2
     result="$("${binary}")"
     if [[ "${result}" != ok ]]; then
       b19-log error "CRYSTAL" "$(_p "stdlib link test with static %s printed %s, expected ok" "${static}" "${result}")"

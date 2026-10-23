@@ -86,9 +86,6 @@ org:
     architecture:
       - amd64
       - arm64
-    build:
-      args:
-        PF_CLI_IMAGE: ""
     conventions:
       fragments:
         parents:

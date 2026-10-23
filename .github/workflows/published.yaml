@@ -221,7 +221,6 @@ jobs:
       M6E_BUILD_DEBUG: ${{ inputs.M6E_BUILD_DEBUG || vars.M6E_BUILD_DEBUG }}
       M6E_NEAR_CACHE_HOST: ${{ inputs.M6E_NEAR_CACHE_HOST || vars.M6E_NEAR_CACHE_HOST }}
       M6E_NEAR_CACHE_PORT: ${{ inputs.M6E_NEAR_CACHE_PORT || vars.M6E_NEAR_CACHE_PORT }}
-      PF_CLI_IMAGE: ${{ vars.PF_CLI_IMAGE || format('{0}/cli:{1}', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/projectfile-org', vars.BASE_IMAGE_DEFAULT_VERSION || 'latest') }}
       SOURCE_DOCKER_REGISTRY: ${{ inputs.SOURCE_DOCKER_REGISTRY || vars.SOURCE_DOCKER_REGISTRY }}
       M6E_VERSION: ${{ needs.release-tag.outputs.tag }}
     steps:
@@ -258,7 +257,6 @@ jobs:
             M6E_NEAR_CACHE_PORT=${{ inputs.M6E_NEAR_CACHE_PORT || vars.M6E_NEAR_CACHE_PORT }}
             M6E_PROJECT=crystal
             M6E_VERSION=${{ needs.release-tag.outputs.tag }}
-            PF_CLI_IMAGE=${{ vars.PF_CLI_IMAGE || format('{0}/cli:{1}', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/projectfile-org', env.M6E_TAG) }}
             SOURCE_DOCKER_REGISTRY=${{ inputs.SOURCE_DOCKER_REGISTRY || vars.SOURCE_DOCKER_REGISTRY }}
           mounts: fetch=/fetch
           pf-cli-image: ${{ vars.PF_CLI_IMAGE || format('{0}/cli:{1}', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/projectfile-org', env.M6E_TAG) }}
@@ -683,7 +681,6 @@ jobs:
             ${{ vars.IGNORELINT_IMAGE || format('{0}/ignorelint', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/damian-buho') }} ${{ env.M6E_TAG }} ignorelint -
             ${{ vars.PF_BRIDGE_IMAGE || format('{0}/bridge', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/projectfile-org') }} ${{ env.M6E_TAG }} pf-bridge -
             ${{ vars.PF_CLI_IMAGE || format('{0}/cli', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/projectfile-org') }} ${{ env.M6E_TAG }} pf-cli -
-            ${{ vars.PF_CLI_IMAGE || format('{0}/cli:{1}', vars.SOURCE_DOCKER_REGISTRY || 'ghcr.io/projectfile-org', env.M6E_TAG) }} - - -
   signing-is-ready:
     runs-on: ubuntu-26.04
     needs: ["release-tag"]
