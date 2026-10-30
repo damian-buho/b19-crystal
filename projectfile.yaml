@@ -104,6 +104,7 @@ repositories:
 technologies:
   - crystal
 upstream:
-  - license: Apache-2.0
+  - authors: The Crystal contributors
+    license: Apache-2.0
     name: Crystal
     url: https://crystal-lang.org
