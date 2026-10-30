@@ -103,3 +103,7 @@ repositories:
     url: ssh://git@kiota.ch/b19/crystal.git
 technologies:
   - crystal
+upstream:
+  - license: Apache-2.0
+    name: Crystal
+    url: https://crystal-lang.org

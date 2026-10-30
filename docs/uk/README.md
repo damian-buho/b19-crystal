@@ -12,6 +12,8 @@ pf-cli-managed: yes
 
 Crystal з офіційних тарболів з автоматичним shards install за наявності shard.yml.
 
+Пакує [Crystal](https://crystal-lang.org).
+
 [![Stand with Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://damian-buho.github.io/support-ukraine/) [![Projectfile inside](https://badges.kiota.ch/static/v1?label=projectfile&message=inside&labelColor=0d0d0d&color=8c6723&style=flat-square)](https://projectfile.org) [![License](https://badges.kiota.ch/static/v1?label=license&message=MIT&color=1e5913&style=flat-square)](LICENSE) [![Cosign](https://badges.kiota.ch/static/v1?label=cosign&message=enabled&color=1e5913&style=flat-square)](https://docs.sigstore.dev/cosign/verifying/verify/) ![ClamAV scanned](https://badges.kiota.ch/static/v1?label=clamav&message=scanned&color=1877aa&style=flat-square) [![PRs welcome](https://badges.kiota.ch/static/v1?label=PRs&message=welcome&color=1e5913&style=flat-square)](CONTRIBUTING.md) [![REUSE compliance](https://api.reuse.software/badge/github.com/damian-buho/b19-crystal)](https://api.reuse.software/info/github.com/damian-buho/b19-crystal)
 
 ![Project status](https://badges.kiota.ch/static/v1?label=status&message=maintained&color=1d63ed&style=flat-square) [![Last commit on GitHub](https://badges.kiota.ch/github/last-commit/damian-buho/b19-crystal?label=last%20commit%20on%20GitHub&style=flat-square)](https://github.com/damian-buho/b19-crystal) [![Last commit on kiota.ch](https://badges.kiota.ch/gitea/last-commit/b19/crystal?gitea_url=https://kiota.ch&label=last%20commit%20on%20kiota.ch&style=flat-square)](https://kiota.ch/b19/crystal)
@@ -120,6 +122,6 @@ make container-build
 
 ## Ліцензія
 
-Цей проєкт ліцензовано на умовах MIT — див. файл [LICENSE](LICENSE) для подробиць.
+Пакування в цьому репозиторії ліцензовано на умовах MIT — див. файл [LICENSE](LICENSE) для подробиць. Crystal поширюється за власною ліцензією, `Apache-2.0`.
 
 <!-- textlint-enable -->
