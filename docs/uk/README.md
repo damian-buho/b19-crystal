@@ -20,6 +20,11 @@ Crystal з офіційних тарболів з автоматичним shard
 
 [![Publish pipeline on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions)
 
+## Першоджерело
+
+Цей проєкт пакує [Crystal](https://crystal-lang.org) (`Apache-2.0`).
+Дякуємо: Ary Borenszweig, Manas Technology Solutions та учасники Crystal
+
 ## Можливості
 
 - Встановлення Shards у продакшн-режимі
@@ -117,11 +122,6 @@ make container-build
 ## Посилання
 
 - [Специфікація Projectfile](https://projectfile.org)
-
-## Першоджерело
-
-Цей проєкт пакує [Crystal](https://crystal-lang.org) (`Apache-2.0`).
-Дякуємо: The Crystal contributors
 
 ## Ліцензія
 

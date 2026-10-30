@@ -18,6 +18,11 @@ Crystal from upstream tarballs with automatic shards install when a shard.yml is
 
 [![Publish pipeline on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions)
 
+## Upstream
+
+This project packages [Crystal](https://crystal-lang.org) (`Apache-2.0`).
+Thanks to: Ary Borenszweig, Manas Technology Solutions and the Crystal contributors
+
 ## Features
 
 - Shards install in production mode
@@ -115,11 +120,6 @@ See the [Roadmap](docs/ROADMAP.md) for what is planned next.
 ## Links
 
 - [Projectfile Specification](https://projectfile.org)
-
-## Upstream
-
-This project packages [Crystal](https://crystal-lang.org) (`Apache-2.0`).
-Thanks to: The Crystal contributors
 
 ## License
 

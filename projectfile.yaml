@@ -104,7 +104,10 @@ repositories:
 technologies:
   - crystal
 upstream:
-  - authors: The Crystal contributors
+  - authors:
+      en: Ary Borenszweig, Manas Technology Solutions and the Crystal contributors
+      es: Ary Borenszweig, Manas Technology Solutions y los colaboradores de Crystal
+      uk: Ary Borenszweig, Manas Technology Solutions та учасники Crystal
     license: Apache-2.0
     name: Crystal
     url: https://crystal-lang.org

@@ -20,6 +20,11 @@ Crystal desde tarballs oficiales con shards install automático cuando hay un sh
 
 [![Publish pipeline on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/crystal/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/crystal/actions)
 
+## Proyecto original
+
+Este proyecto empaqueta [Crystal](https://crystal-lang.org) (`Apache-2.0`).
+Gracias a: Ary Borenszweig, Manas Technology Solutions y los colaboradores de Crystal
+
 ## Características
 
 - Instalación de Shards en modo producción
@@ -117,11 +122,6 @@ Consulta la [Hoja de ruta](../ROADMAP.md) para ver lo que viene.
 ## Enlaces
 
 - [Especificación de Projectfile](https://projectfile.org)
-
-## Proyecto original
-
-Este proyecto empaqueta [Crystal](https://crystal-lang.org) (`Apache-2.0`).
-Gracias a: The Crystal contributors
 
 ## Licencia
 
