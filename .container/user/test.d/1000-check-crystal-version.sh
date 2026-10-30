@@ -9,8 +9,4 @@ set -eou pipefail
 ACTUAL=$(get-crystal-version)
 EXPECTED=$(decomment < /deps/crystal/version.deps)
 
-if [ "${ACTUAL}" != "${EXPECTED}" ]
-then
-  echo "FATAL: expected ${EXPECTED}, got ${ACTUAL}" >&2
-  exit 1
-fi
+b19-assert equals "CRYSTAL" "${EXPECTED}" "${ACTUAL}"
